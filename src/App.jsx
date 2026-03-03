@@ -7,4 +7,5 @@ return (
 <p>Ogrenci No: [235541117]</p>
 </div>
 )
-export default App
+}
+export default App;
