@@ -231,6 +231,35 @@ footer {
   grid-column: span 4;
 }
 
+.intro-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
+}
+
+.intro-content > div {
+  flex: 1;
+}
+
+.tech-stack ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-stack li {
+  background: rgba(162, 155, 254, 0.1);
+  border: 1px solid var(--accent-primary);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--accent-primary);
+  font-weight: 500;
+}
+
 .form-card {
   grid-column: span 4;
   padding: 40px;
@@ -314,15 +343,48 @@ legend {
   transform: translateY(0);
 }
 
+/* Footer & Social */
+footer {
+  margin-top: 60px;
+  padding: 60px 20px;
+  width: 100%;
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.social-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.social-nav a:hover {
+  color: var(--accent-primary);
+}
+
 /* Typography */
 h1 {
   font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 8px;
-  background: linear-gradient(90deg, #fff, #a29bfe);
+  background: linear-gradient(to right, #fff, var(--text-muted));
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 5px;
 }
 
 h2 {
@@ -331,6 +393,19 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 5px;
 }
 
 .label {
