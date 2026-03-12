@@ -1,10 +1,17 @@
 import './App.css'
+import profilImg from './assets/profil.png'
+import proje1Img from './assets/proje1.png'
+import proje2Img from './assets/proje2.png'
 
 function App() {
   return (
     <div className="app-container">
+      <a href="#main-content" className="skip-link">
+        Ana içeriğe atla
+      </a>
+
       <header>
-        <nav>
+        <nav aria-label="Ana navigasyon">
           <ul>
             <li><a href="#hakkimda">Hakkimda</a></li>
             <li><a href="#projeler">Projeler</a></li>
@@ -13,13 +20,19 @@ function App() {
         </nav>
       </header>
 
-      <main className="bento-grid">
+      <main id="main-content" className="bento-grid">
         <section id="hakkimda">
           <h2>Hakkimda</h2>
           {/* Header Card */}
           <div className="glass-card header-card">
-            <h1>Zehra Nur Kutan</h1>
-            <h2>Yazılım Mühendisliği</h2>
+            <figure className="profile-figure">
+              <img src={profilImg} alt="Zehra Nur Kutan'in profesyonel portre fotoğrafı" />
+              <figcaption>Zehra Nur Kutan</figcaption>
+            </figure>
+            <div className="header-text">
+              <h1>Zehra Nur Kutan</h1>
+              <h2>Yazılım Mühendisliği</h2>
+            </div>
           </div>
 
           {/* Intro Card */}
@@ -50,6 +63,18 @@ function App() {
             <p className="value">235541117</p>
           </div>
 
+          <div className="glass-card project-card">
+            <img src={proje1Img} alt="Modern bir web panosu arayüzü ekran görüntüsü" className="project-img" />
+            <p className="label">Proje 1</p>
+            <p className="value">Dashboard UI</p>
+          </div>
+
+          <div className="glass-card project-card">
+            <img src={proje2Img} alt="Minimalist bir e-ticaret sitesi arayüzü ekran görüntüsü" className="project-img" />
+            <p className="label">Proje 2</p>
+            <p className="value">E-Commerce Web</p>
+          </div>
+
           <div className="glass-card intro-card">
             <p className="label">Hobiler & İlgi Alanları</p>
             <p className="value">Kodlama • Kitap Okuma • Yüzme • Tasarım</p>
@@ -63,7 +88,7 @@ function App() {
       </main>
 
       <footer>
-        <p>&copy; 2025 Zehra Nur Kutan. Tum haklari saklidir.</p>
+        <p>&copy; 2025 Zehra Nur Kutan. Tüm hakları saklıdır.</p>
       </footer>
     </div>
   )
