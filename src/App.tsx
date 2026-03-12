@@ -3,24 +3,45 @@ import './App.css'
 function App() {
   return (
     <div className="app-container">
-      <div className="info-card">
-        <h1>🚀 Web Tasarimi ve Programlama</h1>
-        <h2>✨ LAB -1</h2>
-        
-        <p className="label">Ad Soyad:</p>
-        <p className="value">Zehra Nur Kutan</p>
-        
-        <p className="label">Ogrenci No:</p>
-        <p className="value">235541117</p>
+      <div className="bento-grid">
+        {/* Header Card */}
+        <div className="glass-card header-card">
+          <h1>Zehra Nur Kutan</h1>
+          <h2>Web Tasarimi ve Programlama</h2>
+        </div>
 
-        <p className="label">Bölüm:</p>
-        <p className="value">Bilgisayar Programcılığı</p>
+        {/* Status Card */}
+        <div className="glass-card status-card">
+          <div className="status-pill">
+            <span className="status-dot"></span>
+            LIVE PORTFOLIO
+          </div>
+        </div>
 
-        <p className="label">Hobiler:</p>
-        <p className="value">Kodlama, Kitap Okuma, Yüzme</p>
+        {/* Info Card: ID */}
+        <div className="glass-card info-card-mini">
+          <p className="label">Ogrenci No</p>
+          <p className="value">235541117</p>
+        </div>
 
-        <div className="intro">
-          <p>Merhabalar! Ben Zehra, teknolojiye ve tasarıma meraklı bir yazılım öğrencisiyim.</p>
+        {/* Info Card: Department */}
+        <div className="glass-card info-card-mini">
+          <p className="label">Bölüm</p>
+          <p className="value">Bilgisayar Programcılığı</p>
+        </div>
+
+        {/* Info Card: Hobbies */}
+        <div className="glass-card intro-card">
+          <p className="label">Hobiler & İlgi Alanları</p>
+          <p className="value">Kodlama • Kitap Okuma • Yüzme • Tasarım</p>
+        </div>
+
+        {/* Intro Card */}
+        <div className="glass-card intro-card">
+          <p className="label">Hakkımda</p>
+          <div className="intro-text">
+            <p>Merhabalar! Ben Zehra, teknolojiye ve tasarıma meraklı bir yazılım öğrencisiyim. Modern web teknolojileriyle kullanıcı dostu ve şık arayüzler geliştirmekten büyük keyif alıyorum.</p>
+          </div>
         </div>
       </div>
     </div>
