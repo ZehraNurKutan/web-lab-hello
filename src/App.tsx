@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="app-container">
       <div className="info-card">
-        <h1>Web Tasarimi ve Programlama</h1>
-        <h2>LAB -1</h2>
+        <h1>🚀 Web Tasarimi ve Programlama</h1>
+        <h2>✨ LAB -1</h2>
         
         <p className="label">Ad Soyad:</p>
         <p className="value">Zehra Nur Kutan</p>
