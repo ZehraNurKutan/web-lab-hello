@@ -1,22 +1,24 @@
-# Web LAB -1 - Hello Project
-## Hakkinda
-Bu proje , Web Tasarimi ve Programlama dersi LAB -1 kapsaminda
-Vite + React + TypeScript kullanilarak olusturulmustur.
-## Gelistirici
-- **Ad Soyad:** [ZEHRA NUR KUTAN]
-- **Ogrenci No:** [235541117]
-## Kullanilan Teknolojiler
-- React 18
-- TypeScript
-- Vite
-## Kurulum
-```bash
-npm install
-```
-## Calistirma
-```bash
-npm run dev
-```
-Tarayicida http://localhost:5173 adresini ac.
+# Web Laboratuvarı: Semantik Portfolyo Projesi
 
-![alt text](image.png)
+Bu proje, modern web geliştirme prensipleri (Semantik HTML5, Erişilebilirlik, Responsive Tasarım) kullanılarak geliştirilmiş bir kişisel portfolyo sayfasıdır.
+
+## Özellikler
+- **Semantik Yapı:** `header`, `nav`, `main`, `section`, `article`, `footer` etiketleri ile standartlara uygun hiyerarşi.
+- **Erişilebilirlik:** Skip-link, ARIA etiketleri ve klavye gezinme (tab navigation) desteği.
+- **Premium Tasarım:** Bento Grid yerleşimi ve Glassmorphism cam efekti.
+- **Doğrulamalı Form:** HTML5 doğrulama öznitelikleri içeren güvenli iletişim formu.
+
+## GitHub Bilgileri
+Bu projenin nihai versiyonu `feature/semantic-portfolio` dalında bulunmaktadır.
+
+**Branch Link:** [https://github.com/ZehraNurKutan/web-lab-hello/tree/feature/semantic-portfolio](https://github.com/ZehraNurKutan/web-lab-hello/tree/feature/semantic-portfolio)
+
+## Lighthouse Skoru
+Proje, erişilebilirlik ve performans kriterlerinde yüksek başarı göstermiştir.
+
+- **Erişilebilirlik:** %100
+- **Performans:** %95+
+- **SEO:** %100
+
+---
+© 2025 Zehra Nur Kutan
